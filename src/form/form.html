@@ -1,0 +1,22 @@
+<!-- src/form/form.html -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajouter un jeu – LudoZone</title>
+    <script type="module" src="./form.js"></script>
+  </head>
+  <body>
+    <a href="../index.html" class="link-back">← Retour</a>
+    <h1>Ajouter un jeu de société</h1>
+    <form>
+      <input type="text" name="nom" placeholder="Nom du jeu" />
+      <input type="text" name="maison" placeholder="Maison d’édition" />
+      <input type="text" name="prix" placeholder="Prix en dollars" />
+      <input type="text" name="image" placeholder="Lien de l'image" />
+      <textarea name="description" placeholder="Description du jeu"></textarea>
+      <ul id="errors" class="errors"></ul>
+      <button type="submit">Ajouter</button>
+    </form>
+  </body>
+</html>
