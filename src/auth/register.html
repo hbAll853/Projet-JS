@@ -1,0 +1,32 @@
+<!-- src/auth/register.html -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inscription – LudoZone</title>
+    <script type="module" src="./register.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>LudoZone</h1>
+      <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../form/form.html">Ajouter</a>
+        <a href="./register.html">Inscription</a>
+        <a href="./login.html">Connexion</a>
+        <a href="../cart/cart.html">Panier</a>
+      </nav>
+    </header>
+    <a href="../index.html" class="link-back">← Retour</a>
+    <h2>Créer un compte joueur</h2>
+    <form>
+      <input type="text" name="nom" placeholder="Nom complet" />
+      <input type="email" name="email" placeholder="Adresse courriel" />
+      <input type="password" name="password" placeholder="Mot de passe" />
+      <input type="password" name="confirm" placeholder="Confirmation du mot de passe" />
+      <ul id="errors"></ul>
+      <button type="submit">S’inscrire</button>
+    </form>
+  </body>
+  <footer>© LudoZone</footer>
+</html>

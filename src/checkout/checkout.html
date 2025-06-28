@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paiement</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>LudoZone</h1>
+        <nav>
+          <a href="../index.html">Accueil</a>
+          <a href="../form/form.html">Ajouter</a>
+          <a href="../auth/register.html">Inscription</a>
+          <a href="../auth/login.html">Connexion</a>
+          <a href="../cart/cart.html">Panier</a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <h2 class="title-underline">Informations de paiement</h2>
+        <form id="checkout-form">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" name="nom" required />
+          </div>
+          <div class="form-group">
+            <label>Adresse</label>
+            <input type="text" name="adresse" required />
+          </div>
+          <div class="form-group">
+            <label>Carte (simulée)</label>
+            <input type="text" name="carte" placeholder="4242 4242 4242 4242" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Payer</button>
+        </form>
+      </div>
+
+      <footer>© LudoZone</footer>
+    </div>
+    <script type="module" src="./checkout.js"></script>
+  </body>
+</html>

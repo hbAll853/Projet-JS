@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Panier</title>
+  </head>
+  <body>
+    <header>
+      <h1>LudoZone</h1>
+      <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../form/form.html">Ajouter</a>
+        <a href="../auth/register.html">Inscription</a>
+        <a href="../auth/login.html">Connexion</a>
+        <a href="./cart.html" class="header-nav active">Panier</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <h2 class="title-underline">Mon panier</h2>
+      <div id="cart-items" class="cart-container"></div>
+      <div class="cart-total">
+        <h3>Total : <span id="total-price">0.00</span> $</h3>
+        <a class="btn btn-primary" href="../checkout/checkout.html">Passer au paiement</a>
+      </div>
+    </div>
+
+    <footer>© LudoZone</footer>
+    <script type="module" src="./cart.js"></script>
+  </body>
+</html>
